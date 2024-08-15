@@ -1,0 +1,46 @@
+@import url("https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Racing+Sans+One&family=Varela+Round&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * {
+    font-family: "Varela Round", sans-serif;
+  }
+  .hide-scrollbr {
+    overflow-x: auto;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+  .hide-scrollbr::-webkit-scrollbar {
+    display: none;
+  }
+  .loader {
+    border: 8px solid #ffffff; /* Light grey */
+    border-top: 8px solid #5709b1; /* Blue */
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    animation: spin 1s linear infinite;
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+  
+}
+
+@layer components {
+  .btn {
+    @apply inline-block px-5 py-4 rounded-2xl uppercase tracking-wide font-semibold text-sm lg:text-base focus:outline-none focus:ring focus:ring-offset-2 transition;
+  }
+  .btn-primary {
+    @apply bg-purple-600 text-white shadow-lg hover:bg-purple-500 hover:translate-y-0.5 focus:ring-purple-400 active:bg-purple-700 transform;
+  }
+  .btn-secondary {
+    @apply bg-gray-200 text-gray-600 hover:bg-gray-300 focus:ring-gray-300 active:bg-gray-400;
+  }
+  
+}
