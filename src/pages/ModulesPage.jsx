@@ -41,11 +41,15 @@ export default function ModulesPage() {
       </div>
     );
   }
+  const formattedDate = new Date(programModule.dateCreated).toLocaleDateString('en-GB', {
+    day: '2-digit',
+    month: 'long',
+    year: 'numeric',
+  });
 
   return (
     <div>
-      {/* Work */}
-      <div className='flex gap-2 items-center -mx-2 [@media(max-width:390px)]:px-0  p-3 sm:p-3  '>
+      <div className='flex gap-2 items-center -mx-2 [@media(max-width:390px)]:px-0  p-3 sm:px-6  '>
         <img className="h-12" src={logo} alt="" />
         <img className="h-16" src={ujLogo} alt="" />
       </div>
@@ -59,9 +63,9 @@ export default function ModulesPage() {
               alt={programModule.images.title}
               loading="lazy"
             />
-            <div className='lg:hidden flex justify-end -mt-8'>
+            <div className='lg:hidden flex justify-center sm:justify-end -mt-4'>
               {/* Share Button */}
-              <div className='mt-6 w-44'>
+              <div className='-mb-2 w-44'>
                 <ShareButton
                   url={window.location.href}
                   title={programModule.name}
@@ -72,7 +76,7 @@ export default function ModulesPage() {
           </div>
           <div className='col-span-3 lg:pr-16'>
             <h1 className="capitalize max-w-sm sm:max-w-xl pt-3 font-semibold text-2xl text-gray-900 lg:pt-8 sm:text-3xl">{programModule.contentHeading}</h1>
-            <p className=' text-gray-400 mt-2 mb-6'>Last updated: {programModule.dateCreated}</p>
+            <p className=' text-gray-400 mt-2 mb-6'>Last updated: {formattedDate}</p>
             <hr />
             <div className='flex items-center gap-6 my-4'>
               <div>

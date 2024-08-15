@@ -52,7 +52,7 @@ const Slideshow = () => {
   }, [currentIndex, slides.length]);
 
   if (slides.length === 0) {
-    return <div>Loading slideshow...</div>;
+    return <div></div>;
   }
 
   return (
