@@ -95,7 +95,7 @@ export default function HomePage() {
             </div>
 
             {/* Inventors Card */}
-            <div className="w-full mx-auto  py-8">
+            <div className="w-full mx-auto  py-6">
                 <h2 className="text-xl font-semibold tracking-wide text-gray-800 [@media(max-width:390px)]:px-3 px-7 sm:px-8 xl:px-12">Join Visionary Leaders</h2>
                 <div className="mt-6  overflow-x-auto hide-scrollbr snap-x">
                     <div className="flex gap-x-4 [@media(max-width:390px)]:gap-x-3 xl:gap-x-6">
@@ -111,7 +111,7 @@ export default function HomePage() {
             {/* Modules Card */}
             
                 
-                    <div className='w-full mx-auto  py-8'>
+                    <div className='w-full mx-auto'>
                         <h2 className='text-xl font-semibold tracking-wide text-gray-800 [@media(max-width:390px)]:px-3 px-7 sm:px-8 xl:px-12'>Modules</h2>
                         <div className='mt-6 overflow-x-auto hide-scrollbr snap-x'>
                             <div className='flex gap-x-4 [@media(max-width:390px)]:gap-x-3 xl:gap-x-6'>
