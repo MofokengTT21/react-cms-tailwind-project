@@ -37,7 +37,6 @@ export default function ModulesPage() {
   if (loading) {
     return (
       <div className="fixed inset-0 flex items-center justify-center bg-white z-50">
-        {/* Your loading animation */}
         <div className="loader"></div>
       </div>
     );
@@ -55,7 +54,7 @@ export default function ModulesPage() {
         <div className="lg:grid grid-cols-4  mt-6 px-6 w-full mx-auto [@media(max-width:390px)]:px-3 sm:px-8 lg:max-w-[1440px] xl:px-12">
           <div className='col-span-4'>
 
-            <img className=' border rounded-[4rem] h-[26rem] [@media(max-width:510px)]:h-[75vw] w-full object-cover object-center'
+            <img className=' border rounded-[4rem] h-[29rem] lg:h-[34rem] [@media(max-width:510px)]:h-[75vw] w-full object-cover object-center'
               src={programModule.images.file.url}
               alt={programModule.images.title}
               loading="lazy"
@@ -72,7 +71,7 @@ export default function ModulesPage() {
 
           </div>
           <div className='col-span-3 lg:pr-16'>
-            <h1 className="capitalize max-w-80 sm:max-w-md pt-3 font-semibold text-2xl text-gray-900 xl:pt-8 sm:text-3xl">{programModule.contentHeading}</h1>
+            <h1 className="capitalize max-w-sm sm:max-w-xl pt-3 font-semibold text-2xl text-gray-900 lg:pt-8 sm:text-3xl">{programModule.contentHeading}</h1>
             <p className=' text-gray-400 mt-2 mb-6'>Last updated: {programModule.dateCreated}</p>
             <hr />
             <div className='flex items-center gap-6 my-4'>

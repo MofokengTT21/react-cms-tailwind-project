@@ -17,12 +17,12 @@
     display: none;
   }
   .loader {
-    border: 8px solid #ffffff; /* Light grey */
-    border-top: 8px solid #5709b1; /* Blue */
+    border: 8px solid #ffffff; 
+    border-top: 8px solid #7e22ce; 
     border-radius: 50%;
     width: 60px;
     height: 60px;
-    animation: spin 1s linear infinite;
+    animation: spin .7s linear infinite;
   }
   
   @keyframes spin {

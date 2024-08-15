@@ -109,10 +109,10 @@ export default function HomePage() {
             </div>
 
             {/* Modules Card */}
-            <div style={{ backgroundImage: `url('./img/modules.png')` }} className='bg-cover bg-right lg:bg-bottom'>
-                <div className='bg-black bg-opacity-10 backdrop-blur-md'>
+            
+                
                     <div className='w-full mx-auto  py-8'>
-                        <h2 className='text-xl font-semibold tracking-wide text-gray-200 [@media(max-width:390px)]:px-3 px-7 sm:px-8 xl:px-12'>Modules</h2>
+                        <h2 className='text-xl font-semibold tracking-wide text-gray-800 [@media(max-width:390px)]:px-3 px-7 sm:px-8 xl:px-12'>Modules</h2>
                         <div className='mt-6 overflow-x-auto hide-scrollbr snap-x'>
                             <div className='flex gap-x-4 [@media(max-width:390px)]:gap-x-3 xl:gap-x-6'>
                                 <div className='[@media(max-width:390px)]:pl-0 pl-2 sm:pl-4 xl:pl-6'></div>
@@ -123,8 +123,8 @@ export default function HomePage() {
                             </div>
                         </div>
                     </div>
-                </div>
-            </div>
+                
+            
 
             {/* Work */}
             <div className="lg:grid grid-cols-3 mt-9 px-6 w-full mx-auto [@media(max-width:390px)]:px-3 sm:px-8 lg:max-w-[1440px] xl:px-12">
