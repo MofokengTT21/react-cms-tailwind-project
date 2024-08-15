@@ -1,18 +1,19 @@
 import React from 'react';
 
-export const Paragraph = ({ children }) => <p className="mb-4">{children}</p>;
+export const Paragraph = ({ children }) => <p className="mb-3">{children}</p>;
 
 export const UnorderedList = ({ children }) => <ul className="list-disc ml-6">{children}</ul>;
 
 export const OrderedList = ({ children }) => <ol className="list-decimal ml-6">{children}</ol>;
 
-export const ListItem = ({ children }) => <li className='-mb-3'>{children}</li>;
+export const ListItem = ({ children }) => <li className='-mb-3 ml-2 pl-2'>{children}</li>;
 
-export const Heading1 = ({ children }) => <h1 className="text-2xl font-bold mb-4">{children}</h1>;
+export const Heading1 = ({ children }) => <h1 className="text-2xl font-semibold mt-4">{children}</h1>;
 
-export const Heading2 = ({ children }) => <h2 className="text-xl font-bold mb-4">{children}</h2>;
+export const Heading2 = ({ children }) => <h2 className="text-xl font-semisbold mt-6 mb-2">{children}</h2>;
 
-export const Heading3 = ({ children }) => <h3 className="text-lg font-bold mb-4">{children}</h3>;
+export const Heading3 = ({ children }) => <h3 className="text-gray-800">{children}</h3>;
+
 
 export const HorizontalRule = () => <hr className="mb-10 border-t border-gray-300" />;
 

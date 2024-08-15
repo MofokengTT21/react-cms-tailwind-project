@@ -11,9 +11,9 @@ export default function ModulesCard({ programModule }) {
         <h3 className="font-semibold text-lg text-gray-800">{programModule.name}</h3>
 
         <div className="text-gray-600 pt-1 pr-0 w-80 lg:min-w-fit">{documentToReactComponents(programModule.description, options)}</div>
-        <div className="mt-4 w-80 lg:w-fit max-w-80">
-          <Link to={`/module/${programModule.id}`} className="font-semibold text-purple-600 hover:underline text-base xl:text-base">
-            Learn more about {programModule.name}
+        <div className="mt-4 w-80 lg:w-fit">
+          <Link to={`/module/${programModule.id}`} className="underline   font-semibold text-purple-600 hover:text-purple-500 text-base xl:text-base">
+            Read more
           </Link>
         </div>
       </div>

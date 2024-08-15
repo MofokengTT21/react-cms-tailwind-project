@@ -63,7 +63,7 @@ export default function ModulesPage() {
               alt={programModule.images.title}
               loading="lazy"
             />
-            <div className='lg:hidden flex justify-center sm:justify-end -mt-4'>
+            <div className='lg:hidden flex justify-center -mt-4'>
               {/* Share Button */}
               <div className='-mb-2 w-44'>
                 <ShareButton
@@ -75,7 +75,7 @@ export default function ModulesPage() {
 
           </div>
           <div className='col-span-3 lg:pr-16'>
-            <h1 className="capitalize max-w-sm sm:max-w-xl pt-3 font-semibold text-2xl text-gray-900 lg:pt-8 sm:text-3xl">{programModule.contentHeading}</h1>
+            <h1 className="capitalize max-w-sm sm:max-w-xl pt-3 text-2xl text-gray-900 lg:pt-8 sm:text-3xl">{programModule.contentHeading}</h1>
             <p className=' text-gray-400 mt-2 mb-6'>Last updated: {formattedDate}</p>
             <hr />
             <div className='flex items-center gap-6 my-4'>
@@ -83,13 +83,13 @@ export default function ModulesPage() {
                 <img className="rounded-full h-11 w-11 object-cover object-center" src={programModule.authorImg.file.url} alt="" />
               </div>
               <div>
-                <p className='font-semibold'>Author</p>
+                <p className='font-semibold text-gray-800'>Author</p>
                 <p>{programModule.author}</p>
               </div>
             </div>
             <hr />
             <div className='flex sm:gap-6 mt-4'>
-              <p className='font-semibold sm:flex-shrink-0'>TABLE OF CONTENTS</p>
+              <p className='sm:flex-shrink-0'>TABLE OF CONTENTS</p>
               <div>
                 {documentToReactComponents(programModule.tableOfContents, options)}
               </div>

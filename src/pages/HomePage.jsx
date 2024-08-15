@@ -109,7 +109,7 @@ export default function HomePage() {
 
                         <div className="">
 
-                            <a className="btn btn-primary mt-6" href={homePage.applyLink?.content?.[0]?.content?.[0]?.value} target="_blank" rel="noopener noreferrer">Apply</a><span className='text-green-400 font-semibold ml-4 tracking-wide'>Closing date: {formattedDate}</span>
+                            <a className="btn btn-primary mt-6" href={homePage.applyLink?.content?.[0]?.content?.[0]?.value} target="_blank" rel="noopener noreferrer">Apply</a><span className='text-green-500 font-semibold ml-4 tracking-wide'>Closing date: {formattedDate}</span>
                         </div>
                     </div>
                 </div>
@@ -128,14 +128,12 @@ export default function HomePage() {
                         {inovators.map(inovator => (
                             <InovatorsCard key={inovator.id} inovator={inovator} />
                         ))}
-                        <div className='[@media(max-width:390px)]:pl-0 pl-3 sm:pl-4 xl:pl-6'></div>
+                        <div className='[@media(max-width:390px)]:pl-[2px] pl-3 sm:pl-4 xl:pl-6'></div>
                     </div>
                 </div>
             </div>
 
             {/* Modules Card */}
-
-
             <div className='w-full mx-auto'>
                 <h2 className='text-xl font-semibold tracking-wide text-gray-800 [@media(max-width:390px)]:px-3 px-7 sm:px-8 xl:px-12'>Modules</h2>
                 <div className='mt-6 overflow-x-auto hide-scrollbr snap-x'>
@@ -144,12 +142,10 @@ export default function HomePage() {
                         {programModules.map(programModule => (
                             <ModulesCard key={programModule.id} programModule={programModule} />
                         ))}
-                        <div className='[@media(max-width:390px)]:pl-0 pl-3 sm:pl-4 xl:pl-6'></div>
+                        <div className='[@media(max-width:390px)]:pl-[2px] pl-3 sm:pl-4 xl:pl-6'></div>
                     </div>
                 </div>
             </div>
-
-
 
             {/* Work */}
             <div className="lg:grid grid-cols-3 mt-9 px-6 w-full mx-auto [@media(max-width:390px)]:px-3 sm:px-8 lg:max-w-[1440px] xl:px-12">
@@ -200,7 +196,7 @@ export default function HomePage() {
                     <p className="mt-3 lg:pr-2 text-gray-700">{homePage.location}</p>
                 </div>
                 <div className='mt-5 overflow-hidden relative h-0 pb-[83%] sm:pb-[60%] md:pb-[53%] xl:pb-[45%]'>
-                    <iframe className='absolute rounded-2xl left-0 top-0 h-full w-full border-0' src={homePage.locationLink?.content?.[0]?.content?.[0]?.value} width="600" height="450" allowFullScreen="90" loading="lazy" referrerPolicy="no-referrer-when-downgrade" title="Internship Location"></iframe>
+                    <iframe className='absolute rounded-md left-0 top-0 h-full w-full border-0' src={homePage.locationLink?.content?.[0]?.content?.[0]?.value} width="600" height="450" allowFullScreen="90" loading="lazy" referrerPolicy="no-referrer-when-downgrade" title="Internship Location"></iframe>
                 </div>
                 <div className="pt-10 relative sm:-mt-2 2xl:mt-2">
                     <h2 className="capitalize text-2xl text-gray-900 xl:mt-2 sm:text-3xl xl:mb-3 xl:text-2xl">Neighborhood highlights</h2>
@@ -211,18 +207,18 @@ export default function HomePage() {
                 <div className="hide-likebtn-branding flex justify-center items-center gap-2 mt-20 lg:mt-32">
                     <div className='border shadow-sm p-10 rounded-3xl flex-col text-center'>
                         <p className='font-semibold text-gray-800 text-lg'>Do you love this page?</p>
-                        <dev className="likebtn-wrapper likebtn" data-theme="custom" data-btn_size="48" data-f_size="18" data-icon_size="50"
+                        <div className="likebtn-wrapper likebtn" data-theme="custom" data-btn_size="48" data-f_size="18" data-icon_size="50"
                             data-icon_l="hrt13" data-icon_d="hrt7-o" data-icon_l_c="#ff004b" data-icon_l_c_v="#ff004b"
                             data-bg_c="rgba(250,250,250,0)" data-bg_c_v="rgba(250,250,250,0)" data-brdr_c="rgba(198,198,198,0)"
                             data-ef_voting="wobble" data-show_like_label="false" data-site_id={import.meta.env.VITE_LIKEBTN_SITE_ID}
                             data-identifier={import.meta.env.VITE_LIKEBTN_IDENTIFIER}
                             data-dislike_enabled="false"
                             data-i18n_like_tooltip="I Love this page">
-                        </dev>
+                        </div>
                     </div>
                 </div>
             </div>
-            <hr className='border mt-24 lg:mt-52' />
+            <hr className='border mt-32 lg:mt-52' />
             <div se={{ backgroundImage: `url(./img/modules.png)` }} className="bg-cover">
 
                 <div className=' bg-opacity-0 backdrop-blur-md h-full flex justify-center gap-3 py-14'>

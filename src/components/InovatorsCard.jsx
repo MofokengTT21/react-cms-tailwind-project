@@ -11,7 +11,7 @@ export default function InovatorsCard({ inovator }) {
 
         <div className="text-gray-600 text-justify pt-1 pr-0 w-80 lg:min-w-fit">{documentToReactComponents(inovator.description, options)}</div>
         <div className="mt-4 w-80 lg:w-fit">
-          <a href={inovator.link}  className=" text-purple-600 font-semibold hover:underline text-base xl:text-base" target="_blank" 
+          <a href={inovator.link}  className="underline text-purple-600 font-semibold hover:underline text-base xl:text-base" target="_blank" 
     rel="noopener noreferrer">
             Visit us
           </a>
