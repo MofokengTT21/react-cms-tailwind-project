@@ -195,8 +195,8 @@ export default function HomePage() {
                     <h2 className="capitalize text-2xl text-gray-900 xl:mt-2 sm:text-3xl xl:mb-3 xl:text-2xl">Where you'll be</h2>
                     <p className="mt-3 lg:pr-2 text-gray-700">{homePage.location}</p>
                 </div>
-                <div className='mt-5 overflow-hidden relative h-0 pb-[83%] sm:pb-[60%] md:pb-[53%] xl:pb-[45%]'>
-                    <iframe className='absolute rounded-md left-0 top-0 h-full w-full border-0' src={homePage.locationLink?.content?.[0]?.content?.[0]?.value} width="600" height="450" allowFullScreen="90" loading="lazy" referrerPolicy="no-referrer-when-downgrade" title="Internship Location"></iframe>
+                <div className='mt-5 overflow-hidden relative h-0 pb-[83%] sm:pb-[60%] md:pb-[53%] xl:pb-[45%] rounded-[4em]'>
+                    <iframe className='absolute transform scale-[] left-0 top-0 h-[102%] -mt-1 -ml-1 w-[102%] lg:h-[101.5%] lg:w-[101%] border-0 object-cover object-center' src={homePage.locationLink?.content?.[0]?.content?.[0]?.value} width="600" height="450" allowFullScreen="90" loading="lazy" referrerPolicy="no-referrer-when-downgrade" title="Internship Location"></iframe>
                 </div>
                 <div className="pt-10 relative sm:-mt-2 2xl:mt-2">
                     <h2 className="capitalize text-2xl text-gray-900 xl:mt-2 sm:text-3xl xl:mb-3 xl:text-2xl">Neighborhood highlights</h2>
