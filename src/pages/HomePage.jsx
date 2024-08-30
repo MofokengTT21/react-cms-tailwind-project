@@ -204,19 +204,6 @@ export default function HomePage() {
                         {documentToReactComponents(homePage.neighborhoodHighlights, options)}
                     </div>
                 </div>
-                <div className="hide-likebtn-branding flex justify-center items-center gap-2 mt-20 lg:mt-32">
-                    <div className='border shadow-sm p-10 rounded-3xl flex-col text-center'>
-                        <p className='font-semibold text-gray-800 text-lg'>Do you love this page?</p>
-                        <div className="likebtn-wrapper likebtn" data-theme="custom" data-btn_size="48" data-f_size="18" data-icon_size="50"
-                            data-icon_l="hrt13" data-icon_d="hrt7-o" data-icon_l_c="#ff004b" data-icon_l_c_v="#ff004b"
-                            data-bg_c="rgba(250,250,250,0)" data-bg_c_v="rgba(250,250,250,0)" data-brdr_c="rgba(198,198,198,0)"
-                            data-ef_voting="wobble" data-show_like_label="false" data-site_id={import.meta.env.VITE_LIKEBTN_SITE_ID}
-                            data-identifier={import.meta.env.VITE_LIKEBTN_IDENTIFIER}
-                            data-dislike_enabled="false"
-                            data-i18n_like_tooltip="I Love this page">
-                        </div>
-                    </div>
-                </div>
             </div>
             <hr className='border mt-32 lg:mt-52' />
             <div se={{ backgroundImage: `url(./img/modules.png)` }} className="bg-cover">
